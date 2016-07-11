@@ -1,2 +1,2 @@
 # thinlines
-A show of solidarity for our law enforcement and citizens alike.
+A show of solidarity for law enforcement and citizens alike.
