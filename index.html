@@ -1,12 +1,347 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title></title>
-	<link rel="stylesheet" href="" type="text/css" />
-</head>
-<body>
 
+	<meta name="robots" content="noindex, nofollow">
+
+	<meta property="og:url"                content="http://www.thinlines.us" />
+	<meta property="og:type"               content="website" />
+	<meta property="og:title"              content="THINLINES.US" />
+	<meta property="og:description"        content="A show of solidarity for law enforcement and citizens alike." />
+	<meta property="og:image"              content="http://www.thinlines.us/thinlines_Facebook.png" />
+
+	<meta name="twitter:card"              content="summary_large_image">
+	<meta name="twitter:site"              content="@collins">
+	<meta name="twitter:creator"           content="@collins">
+	<meta name="twitter:title"             content="THINLINES.US">
+	<meta name="twitter:description"       content="A show of solidarity for law enforcement and citizens alike.">
+	<meta name="twitter:image"             content="http://www.thinlines.us/thinlines_Twitter.png">
+
+
+	<title>THINLINES.US</title>
+	<style type="text/css">
+		@font-face {
+		    font-family: 'NBMONO';
+		    src: url('nb-int-mono.otf') format('opentype');
+		}
+	</style>
+	<link rel="stylesheet" href="" type="text/css" />
+	<!-- include bootstrap -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<style>
+	body {
+		font-family: 'NBMONO';
+	}
+		/*img {
+		  display: block;
+		  max-width:4320px;
+		  max-height:2592px;
+		  width: auto;
+		  height: auto;
+		}*/
+
+	/*img.resize{max-height:800px;width:auto;}
+	img.resize{height:auto;max-width:800px;}*/
+
+	/* item styles */
+	.item-image {
+	  position: relative;
+	  overflow: hidden;
+	  padding-bottom: 60%;  
+	}
+	.item-image img {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  margin: auto;
+	}
+
+	/* centering styles for jsbin */
+	html,
+	body {
+	  width: 100%;
+	  height: 100%;
+	  margin: 0px;
+	  padding: 0px;
+	}
+	html {
+	  /*display: table;*/
+	}
+	body {
+	  /*display: table-cell;
+	  vertical-align: middle;*/
+	  display: table;
+	}
+
+	.alt-grid [class*="col-"] {padding-left:0;padding-right:0}
+	.alt-grid .row {margin-left:0;margin-right:0}
+
+	/* container adjusted */
+	.alt-grid .container {width:100%;max-width:none;padding:0;}
+
+	.both-represent {
+		color: #3333ff;
+	}
+
+	.vcenter {
+	    display: inline-block;
+	    vertical-align: middle;
+	}
+
+	a, a:visited {
+		color: #3333ff !important;
+		text-decoration: underline;
+	}
+
+	a:hover {
+	    text-decoration: none;
+	}
+
+	/* Extra small devices (phones, less than 768px) */
+	/* No media query since this is the default in Bootstrap */
+
+
+	/* Medium devices (desktops, 992px and up) */
+	@media (min-width: @screen-md-min) {
+
+	}
+
+	/* Large devices (large desktops, 1200px and up) */
+	@media (min-width: @screen-lg-min) {
+
+	}
+
+	/* Large desktops and laptops */
+	@media (min-width: 1200px) {
+		#credits {
+		    position: absolute;
+		    bottom: 0;
+		    left: 0;
+		}
+		#small {
+			display: none;
+		}
+	}
+
+	/* Landscape tablets and medium desktops */
+	@media (min-width: 992px) and (max-width: 1199px) {
+		#credits {
+		    position: absolute;
+		    bottom: 0;
+		    left: 0;
+		}
+		#small {
+			display: none;
+		}
+	}
+
+	/* Portrait tablets and small desktops */
+	@media (min-width: 768px) and (max-width: 991px) {
+		#credits {
+		    position: absolute;
+		    bottom: 0;
+		    left: 0;
+		}
+		#small {
+			display: none;
+		}
+	}
+
+	/* Landscape phones and portrait tablets */
+	@media (min-width: 481px) and (max-width: 767px) {
+		.thin_blue_line {
+		    position: absolute;
+		    bottom: 0;
+		    left: 0;
+		}
+		#big {
+			display:none;
+		}
+		#small {
+			font-size:.5em;
+		}
+	}
+
+
+	@media (max-width: 640px) {
+		.blue_class, .black_class, .dont_cross {
+			max-width: 100px;
+		}
+		.credits_lines {
+			float: none;
+   			display: inline-block;
+		}
+	}
+
+	/* Portrait phones and smaller */
+	@media (max-width: 480px) {
+		.thin_blue_line {
+		    position: absolute;
+		    bottom: 0;
+		    left: 0;
+		}
+
+		#big {
+			display:none;
+		}
+		#small {
+			font-size:.5em;
+		}
+	
+	}
+
+
+	</style>
+</head>
+<body class="alt-grid">
+<div class="container">
+	<div id="big">
+	    <div class="row">
+		    <div class="col-xs-12 col-sm-12 col-md-6">
+		        <div class="item-image">
+					<img src="thin_black_line.svg" class="img-responsive" />
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 thin_blue_line">
+		        <div class="item-image">
+					<img src="thin_blue_line.svg" class="img-responsive" />
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		    <div class="col-xs-12 col-sm-4">
+		        <div class="" style="padding:10px 0px 0px 20px;">
+					&uarr;<br /><br />
+					We wave this flag<br />
+					when one of our<br />
+					black brothers or<br />
+					sisters is killed.
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+		        <div class="both-represent" style="padding-top:10px;">
+					<br /><br />
+					Both represent thin<br />
+					lines that should<br />
+					never be crossed.
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+		        <div class="" style="padding:10px 20px 0px 0px;">
+					&uarr;<br /><br />
+					We wave this flag<br />
+					when an officer<br />
+					is killed in the<br />
+					line of duty.
+				</div>
+			</div>
+		</div>
+		<div id="credits" style="padding:0px 0px 10px 20px;">
+			<div>Post to: <a href="https://www.facebook.com/share.php?u=http://www.thinlines.us">Facebook</a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.thinlines.us&via=%40collins&text=A%20show%20of%20solidarity%20for%20law%20enforcement%20and%20citizens%20alike.&hashtags=%23thinblackline%20%23thinblueline">Twitter</a>&nbsp;&nbsp;&nbsp;<a href="https://www.dropbox.com/sh/tksyrmy8jgw58ka/AACoXHFiRtZTZhoSWxFGf6_Ja/SOCIAL_MEDIA/thinlines_Instagram_Video.mov?dl=1">Instagram</a></div>
+			<div><a href="https://www.dropbox.com/sh/tksyrmy8jgw58ka/AACqHIuSOtYFthaoEXYubgN0a/SOCIAL_MEDIA?lst">Download Graphics</a></div><br />
+			<div>&lt;3 <a href="#">Nick Ace</a> X <a href="#">Dr. Victor</a> at <a href="#">COLLINS</a></div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div id="small" style="">
+
+		<div style="position: absolute; top: 50%; transform: translateY(-50%);">		
+			<div class="">
+				<div class="both-represent black_class" style="text-align:left; margin:0px 0px 0px 10px;">
+					Both represent
+					thin lines that
+					should never be
+					crossed.
+				</div>
+			</div>
+		</div>
+
+	    <div class="row">
+		    <div class="col-xs-12">
+		        <div class="item-image">
+					<img src="thin_black_line.svg" class="img-responsive" />
+				</div>
+			</div>
+			<div class="col-xs-7">
+				<div class="black_class" style="margin:10px 0px 0px 10px;">
+					&uarr;<br /><br />
+					We wave this flag
+					when one of our
+					black brothers or
+					sisters is killed.
+				</div>
+			</div>
+
+			<div class="col-xs-5">
+				<div id="credits" class="row"><br /><br />
+					<div style="" class="col-xs-offset-3 col-xs-3">Post to:<br /><a href="https://www.facebook.com/share.php?u=http://www.thinlines.us">Facebook</a><br /><a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.thinlines.us&via=%40collins&text=A%20show%20of%20solidarity%20for%20law%20enforcement%20and%20citizens%20alike.&hashtags=%23thinblackline%20%23thinblueline&">Twitter</a><br /><a href="https://www.dropbox.com/sh/tksyrmy8jgw58ka/AACoXHFiRtZTZhoSWxFGf6_Ja/SOCIAL_MEDIA/thinlines_Instagram_Video.mov?dl=1">Instagram</a></div>
+
+					<div style="" class="col-xs-3"><br /><a href="https://www.dropbox.com/sh/tksyrmy8jgw58ka/AACqHIuSOtYFthaoEXYubgN0a/SOCIAL_MEDIA?lst">Download<br />Graphics</a></div>
+
+					<div style="" class="col-xs-3">&lt;3<br /><a href="#">Nick Ace</a> X<br /><a href="#">Dr. Victor</a><br />at <a href="#">COLLINS</a></div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 thin_blue_line">
+				<div class="blue_class" style="text-align:left; margin:0px 0px 10px 10px;">
+						We wave this flag
+						when an officer
+						is killed in the
+						line of duty.<br /><br />
+						&darr;
+					</div>
+			        <div class="item-image" style="border-bottom: 2px solid #cccccc;">
+						<img src="thin_blue_line.svg" class="img-responsive" />
+					</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div style="display:none;">
+	<img src="favicon_thinblackline.png" id="favicon_1" />
+	<img src="favicon_thinblueline.png" id="favicon_2" />
+	</div>
+</div>
+<script src="favico.js"></script>
+<script>
+	var favicon=new Favico();
+	var image1=document.getElementById('favicon_1');
+	var image2=document.getElementById('favicon_2');
+	favicon.image(image);
+
+	(function() {
+		var favicon=new Favico();
+		var image_1=document.getElementById('favicon_1');
+		var image_2=document.getElementById('favicon_2');
+
+	    var delay = 3000;
+	    var state = 0;
+	    (function next() {
+	         state = 1 - state;
+	         var src = state ? favicon.image(image_1) : favicon.image(image_2);
+	         setTimeout(next, delay);
+	    })();
+	 })();
+</script>
 </body>
 </html>
