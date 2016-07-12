@@ -17,8 +17,6 @@
 	<meta name="twitter:description"       content="#thinlines">
 	<meta name="twitter:image"             content="http://thinlines.us/thinlines_Twitter.png">
 
-	<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
-
 
 	<title>thinlines.us</title>
 	<style type="text/css">
@@ -410,10 +408,12 @@
 </div>
 <script src="favico.js"></script>
 <script>
+	var favicon=new Favico();
+	var image_1=document.getElementById('favicon_1');
+	var image_2=document.getElementById('favicon_2');
+	favicon.image(image_1);
+
 	(function() {
-		var favicon=new Favico();
-		var image_1=document.getElementById('favicon_1');
-		var image_2=document.getElementById('favicon_2');
 
 	    var delay = 3000;
 	    var state = 0;
