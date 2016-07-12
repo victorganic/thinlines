@@ -8,15 +8,15 @@
 
 	<meta property="og:url"                content="http://www.thinlines.us" />
 	<meta property="og:type"               content="website" />
-	<meta property="og:title"              content="THINLINES.US" />
-	<meta property="og:description"        content="A show of solidarity for law enforcement and citizens alike." />
+	<meta property="og:title"              content="thinlines.us" />
+	<meta property="og:description"        content="We wish to start a respectful dialog by demonstrating a shared sense of community and symbolism." />
 	<meta property="og:image"              content="http://www.thinlines.us/thinlines_Facebook.png" />
 
 	<meta name="twitter:card"              content="summary_large_image">
-	<meta name="twitter:site"              content="@collins">
-	<meta name="twitter:creator"           content="@collins">
-	<meta name="twitter:title"             content="THINLINES.US">
-	<meta name="twitter:description"       content="A show of solidarity for law enforcement and citizens alike.">
+	<meta name="twitter:site"              content="@collins_nyc">
+	<meta name="twitter:creator"           content="@collins_nyc">
+	<meta name="twitter:title"             content="thinlines.us">
+	<meta name="twitter:description"       content="We wish to start a respectful dialog by demonstrating a shared sense of community and symbolism.">
 	<meta name="twitter:image"             content="http://www.thinlines.us/thinlines_Twitter.png">
 
 
@@ -140,6 +140,20 @@
 		}
 	}
 
+	/* column view in portrait and landscape */
+	@media (min-width: 992px) and (orientation:landscape) {
+	    .col-md-4 {
+	        
+	    }
+	}
+
+	@media (min-width: 992px) and (orientation:portrait) {
+	    .col-md-4 {
+	         
+	    }
+	}
+
+
 	/* Portrait tablets and small desktops */
 	@media (min-width: 768px) and (max-width: 991px) {
 		#credits {
@@ -165,12 +179,19 @@
 		#small {
 			font-size:.5em;
 		}
+		.black_class {
+			margin:10px 0px 0px 10px;
+		}
+
+		.blue_class {
+			margin:0px 0px 10px 10px;
+		}
 	}
 
 
 	@media (max-width: 640px) {
 		.blue_class, .black_class, .dont_cross {
-			max-width: 100px;
+			max-width: 200px;
 		}
 		.credits_lines {
 			float: none;
@@ -192,7 +213,31 @@
 		#small {
 			font-size:.5em;
 		}
+
+
+		.black_class {
+			margin:0px 0px 0px 10px;
+		}
+
+		.blue_class {
+			margin:0px 0px 0px 10px;
+		}
 	
+	}
+
+	/* Portrait phones and smaller */
+	@media (max-width: 320px) {
+		#small {
+			font-size:.4em;
+		}
+
+		.black_class {
+			margin:0px 0px 0px 10px;
+		}
+
+		.blue_class {
+			margin:0px 0px 0px 10px;
+		}
 	}
 
 
@@ -202,12 +247,12 @@
 <div class="container">
 	<div id="big">
 	    <div class="row">
-		    <div class="col-xs-12 col-sm-12 col-md-6">
+		    <div class="col-xs-6 col-sm-6 col-md-6">
 		        <div class="item-image">
 					<img src="thin_black_line.svg" class="img-responsive" />
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 thin_blue_line">
+			<div class="col-xs-6 col-sm-6 col-md-6 thin_blue_line">
 		        <div class="item-image">
 					<img src="thin_blue_line.svg" class="img-responsive" />
 				</div>
@@ -224,7 +269,7 @@
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-4">
-		        <div class="both-represent" style="padding-top:10px;">
+		        <div class="both-represent">
 					<br /><br />
 					Both represent thin<br />
 					lines that should<br />
@@ -243,8 +288,8 @@
 		</div>
 		<div id="credits" style="padding:0px 0px 10px 20px;">
 			<div>Post to: <a href="https://www.facebook.com/share.php?u=http://www.thinlines.us">Facebook</a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.thinlines.us&via=%40collins&text=A%20show%20of%20solidarity%20for%20law%20enforcement%20and%20citizens%20alike.&hashtags=%23thinblackline%20%23thinblueline">Twitter</a>&nbsp;&nbsp;&nbsp;<a href="https://www.dropbox.com/sh/tksyrmy8jgw58ka/AACoXHFiRtZTZhoSWxFGf6_Ja/SOCIAL_MEDIA/thinlines_Instagram_Video.mov?dl=1">Instagram</a></div>
-			<div><a href="https://www.dropbox.com/sh/tksyrmy8jgw58ka/AACqHIuSOtYFthaoEXYubgN0a/SOCIAL_MEDIA?lst">Download Graphics</a></div><br />
-			<div>&lt;3 <a href="#">Nick Ace</a> X <a href="#">Dr. Victor</a> at <a href="#">COLLINS</a></div>
+			<div><a href="https://www.dropbox.com/sh/xgwcx1tr5fc4y3z/AAAZwMgD4-8WHScUKVyZfxCoa?dl=0">Download Graphics</a></div><br />
+			<div>&lt;3 <a href="http://www.nickace.com">NA</a> X <a href="#">DrV</a> at <a href="#">C</a></div>
 		</div>
 	</div>
 
@@ -264,9 +309,9 @@
 
 	<div id="small" style="">
 
-		<div style="position: absolute; top: 50%; transform: translateY(-50%);">		
+		<div style="position: absolute; top: 48%; transform: translateY(-50%);">		
 			<div class="">
-				<div class="both-represent black_class" style="text-align:left; margin:0px 0px 0px 10px;">
+				<div class="both-represent dont_cross" style="text-align:left; margin-left:10px;">
 					Both represent
 					thin lines that
 					should never be
@@ -275,6 +320,7 @@
 			</div>
 		</div>
 
+		<!-- SMALL -->
 	    <div class="row">
 		    <div class="col-xs-12">
 		        <div class="item-image">
@@ -282,8 +328,8 @@
 				</div>
 			</div>
 			<div class="col-xs-7">
-				<div class="black_class" style="margin:10px 0px 0px 10px;">
-					&uarr;<br /><br />
+				<div class="black_class" style="">
+					&uarr;<br />
 					We wave this flag
 					when one of our
 					black brothers or
@@ -292,21 +338,26 @@
 			</div>
 
 			<div class="col-xs-5">
-				<div id="credits" class="row"><br /><br />
-					<div style="" class="col-xs-offset-3 col-xs-3">Post to:<br /><a href="https://www.facebook.com/share.php?u=http://www.thinlines.us">Facebook</a><br /><a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.thinlines.us&via=%40collins&text=A%20show%20of%20solidarity%20for%20law%20enforcement%20and%20citizens%20alike.&hashtags=%23thinblackline%20%23thinblueline&">Twitter</a><br /><a href="https://www.dropbox.com/sh/tksyrmy8jgw58ka/AACoXHFiRtZTZhoSWxFGf6_Ja/SOCIAL_MEDIA/thinlines_Instagram_Video.mov?dl=1">Instagram</a></div>
+				<div id="credits" class="row">
+					<br />
+					<div style="font-size:.9em;" class="">Post to:<br /><a href="https://www.facebook.com/share.php?u=http://www.thinlines.us">Facebook</a><br /><a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.thinlines.us&via=%40collins&text=A%20show%20of%20solidarity%20for%20law%20enforcement%20and%20citizens%20alike.&hashtags=%23thinblackline%20%23thinblueline&">Twitter</a><br /><a href="https://www.dropbox.com/sh/tksyrmy8jgw58ka/AACoXHFiRtZTZhoSWxFGf6_Ja/SOCIAL_MEDIA/thinlines_Instagram_Video.mov?dl=1">Instagram</a>
 
-					<div style="" class="col-xs-3"><br /><a href="https://www.dropbox.com/sh/tksyrmy8jgw58ka/AACqHIuSOtYFthaoEXYubgN0a/SOCIAL_MEDIA?lst">Download<br />Graphics</a></div>
+					<br />
 
-					<div style="" class="col-xs-3">&lt;3<br /><a href="#">Nick Ace</a> X<br /><a href="#">Dr. Victor</a><br />at <a href="#">COLLINS</a></div>
+					<br /><a href="https://www.dropbox.com/sh/xgwcx1tr5fc4y3z/AAAZwMgD4-8WHScUKVyZfxCoa?dl=0">Download<br />Graphics</a>
+
+					<br /><br />
+
+					<a href="http://www.nickace.com">NA</a> X <a href="">VN</a> at <a href="#">C</a></div>
 				</div>
 			</div>
 
 			<div class="col-xs-12 thin_blue_line">
-				<div class="blue_class" style="text-align:left; margin:0px 0px 10px 10px;">
+				<div class="blue_class" style="text-align:left;">
 						We wave this flag
 						when an officer
 						is killed in the
-						line of duty.<br /><br />
+						line of duty.<br />
 						&darr;
 					</div>
 			        <div class="item-image" style="border-bottom: 2px solid #cccccc;">
